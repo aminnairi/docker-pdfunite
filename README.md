@@ -33,7 +33,7 @@ $ docker rmi aminnairi/pdfunite
 ### Docker
 
 ```console
-$ docker run -w "PWD":/home/pdfunite aminnairi/pdfunite first.pdf second.pdf output.pdf
+$ docker run -w "$PWD":/home/pdfunite aminnairi/pdfunite first.pdf second.pdf output.pdf
 ```
 
 ### Docker Compose
