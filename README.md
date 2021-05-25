@@ -19,7 +19,7 @@
 ## Installation
 
 ```console
-$ docker pull aminnairi/pdfunite
+$ docker pull aminnairi/pdfunite:latest
 ```
 
 ## Uninstallation
