@@ -23,3 +23,11 @@ $ docker build -t aminnairi/pdfunite .
 ```console
 $ docker run -v "$PWD":/home/pdfunite aminnairi/pdfunite first.pdf second.pdf output.pdf
 ```
+
+## Push
+
+```console
+$ docker push aminnairi/pdfunite:TAG
+```
+
+*Where TAG is the target tag like `0.1.0`.*
