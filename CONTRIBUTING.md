@@ -15,8 +15,10 @@ $ git clone https://github.com/aminnairi/docker-pdfunite.git
 ## Build
 
 ```console
-$ docker build -t aminnairi/pdfunite .
+$ docker build -t aminnairi/pdfunite:TAG .
 ```
+
+*Where TAG is the target tag like `0.1.0`.*
 
 ## Test
 
