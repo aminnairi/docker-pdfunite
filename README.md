@@ -33,7 +33,19 @@ $ docker rmi aminnairi/pdfunite
 ### Docker
 
 ```console
-$ docker run -w "$PWD":/home/pdfunite aminnairi/pdfunite first.pdf second.pdf output.pdf
+$ docker run -v "$PWD":/home/pdfunite aminnairi/pdfunite first.pdf second.pdf output.pdf
+```
+
+If you want to change the output of the final merged file, use the last file name. For instance, if you want to name your output `project.pdf`.
+
+```console
+$ docker run -v "$PWD":/home/pdfunite aminnairi/pdfunite introduction.pdf content.pdf conclusion.pdf project.pdf
+```
+
+You can have unlimited files before the output. The exemple shows two to three files but you can merge even more.
+
+```console
+$ docker run -v "$PWD":/home/pdfunite aminnairi/pdfunite 1.pdf 2.pdf 3.pdf 4.pdf 5.pdf output.pdf
 ```
 
 ### Docker Compose
